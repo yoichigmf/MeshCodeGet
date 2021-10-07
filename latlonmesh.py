@@ -1,4 +1,9 @@
 # -*- coding: utf-8 -*-
+#   https://www.gis-py.com/entry/py-latlon2mesh    こちらのコードを参照  4次メッシュ部分を追加
+#
+#     2021.10.7  Y.Kayama
+#
+
 def getmeshID(lat, lon):
     #1次メッシュ
     quotient_lat, remainder_lat = divmod(lat * 60, 40)
