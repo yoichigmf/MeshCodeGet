@@ -39,9 +39,19 @@ def getmeshID(lat, lon):
     
     
     
+    first25dg, rem_lat = divmod(remainder_lat , 0.75)
+    last25dg,  rem_lon = divmod( remainder_lon , 1.125 )
+
+
+
+    first5dg, rem_lat = divmod(remainder_lat , 0.15)
+    last5dg,  rem_lon = divmod( remainder_lon , 0.225 )
+    
+
     
         #4次メッシュ y けた
     first1digit, remainder_lat = divmod(remainder_lat , 15)
+
 
     print("first1 " + str(first1digit) + " remainder_lat " + str(remainder_lat) )
     
@@ -65,15 +75,20 @@ def getmeshID(lat, lon):
     
     forth_mesh = third_mesh + digit
     
-    
+    m25_mesh = third_mesh + "3" +  format(int( first25dg),'02')+  format(int(last25dg),'02')
     
 
+    m5_mesh = third_mesh + "2" +  format(int( first5dg),'03')+  format(int(last5dg),'03')
     print("1次メッシュ:" + first_mesh)
     print("2次メッシュ:" + second_mesh)
     print("3次メッシュ:" + third_mesh)
     
     print("4次メッシュ:" + forth_mesh)
-    
+    print("25mメッシュ:" + m25_mesh)
+
+    print("5mメッシュ:" + m5_mesh)
+
+
     return forth_mesh
 
 if __name__ == '__main__':

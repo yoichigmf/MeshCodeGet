@@ -29,8 +29,8 @@ import os.path
 class MouseEventlogSample:
 
     def __init__(self, iface):
-        self.plugin_name = 'ダイアログ無し雛形' # プラグイン名
-        self.menu_pos    = '雛形'               # プラグインの登録場所(このサンプルの場合、メニューの「プラグイン/雛形/ダイアログ無し雛形」)
+        self.plugin_name = 'メッシュコード取得' # プラグイン名
+        self.menu_pos    = 'メッシュコード'               # プラグインの登録場所(このサンプルの場合、メニューの「プラグイン/雛形/ダイアログ無し雛形」)
         self.toolbar     = True                 # Trueならツールバーにアイコンを表示する
         self.checkable   = False                 # Trueならプラグイン実行中はアイコンが凹んだままになる
 

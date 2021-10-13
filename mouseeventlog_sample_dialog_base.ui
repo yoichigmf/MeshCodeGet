@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>305</width>
-    <height>72</height>
+    <width>355</width>
+    <height>234</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,7 +17,7 @@
    <property name="geometry">
     <rect>
      <x>50</x>
-     <y>30</y>
+     <y>190</y>
      <width>75</width>
      <height>23</height>
     </rect>
@@ -33,13 +33,23 @@
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>30</y>
+     <y>190</y>
      <width>75</width>
      <height>23</height>
     </rect>
    </property>
    <property name="text">
     <string>終了</string>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" name="plainTextEdit">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>311</width>
+     <height>161</height>
+    </rect>
    </property>
   </widget>
  </widget>
